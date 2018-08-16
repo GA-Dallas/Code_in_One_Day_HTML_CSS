@@ -1,1 +1,120 @@
-<h1 align="center">Hello World</h1>
+<!DOCTYPE html>
+<head>
+  <!-- <link href="/normalize.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/YNcaZze.jpg?2');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 70px;
+      padding: 20px;
+      background-color: black;
+      text-shadow: 2px 2px red;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid black;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    button{
+      padding: 5px;
+      border-radius: 10%;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/ets3Xgb.png?1">
+    <h1>Daniel's Dallas Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Contact Me</a></li>
+      <li><a href="#">My Favorite Places</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Groom yourself 4 hours - checked</h2>
+    <p>
+        Mark territory flee in terror at cucumber discovered on floor. 
+        Scream at teh bath mew meow for food, then when human fills food dish, 
+        take a few bites of food and continue meowing for i like big cats and i can not lie so swat at dog cough, 
+        for sit in box. Eat the rubberband immediately regret falling into bathtub destroy the blinds catasstrophe or ask 
+        for petting hate dog. Get suspicious of own shadow then go play with toilette paper brown cats with pink ears so give attitude 
+        flex claws on the human's belly and purr like a lawnmower and run outside as soon as door open mark territory, but my left donut is missing, 
+        as is my right. Slap kitten brother with paw knock over christmas tree and brown cats with pink ears, 
+        have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat vommit food and eat it again.
+    </p>
+    <button>Like &#128077;</button>
+  </article>
+  <article>
+    <h2>Groom yourself 4 hours - checked</h2>
+    <p>
+        Mark territory flee in terror at cucumber discovered on floor. 
+        Scream at teh bath mew meow for food, then when human fills food dish, 
+        take a few bites of food and continue meowing for i like big cats and i can not lie so swat at dog cough, 
+        for sit in box. Eat the rubberband immediately regret falling into bathtub destroy the blinds catasstrophe or ask 
+        for petting hate dog. Get suspicious of own shadow then go play with toilette paper brown cats with pink ears so give attitude 
+        flex claws on the human's belly and purr like a lawnmower and run outside as soon as door open mark territory, but my left donut is missing, 
+        as is my right. Slap kitten brother with paw knock over christmas tree and brown cats with pink ears, 
+        have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat vommit food and eat it again.
+
+    </p>
+    <button>Like &#128077;</button>
+  </article>
+  <article>
+    <h2>Groom yourself 4 hours - checked</h2>
+    <p>
+        Mark territory flee in terror at cucumber discovered on floor. 
+        Scream at teh bath mew meow for food, then when human fills food dish, 
+        take a few bites of food and continue meowing for i like big cats and i can not lie so swat at dog cough, 
+        for sit in box. Eat the rubberband immediately regret falling into bathtub destroy the blinds catasstrophe or ask 
+        for petting hate dog. Get suspicious of own shadow then go play with toilette paper brown cats with pink ears so give attitude 
+        flex claws on the human's belly and purr like a lawnmower and run outside as soon as door open mark territory, but my left donut is missing, 
+        as is my right. Slap kitten brother with paw knock over christmas tree and brown cats with pink ears, 
+        have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat vommit food and eat it again.
+    </p>
+    <button>Like &#128077;</button>
+  </article>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+  </script>
+  <script>
+    $("button").click(function(e){
+      $(e.target).html("liked &#128077;").css({"background-color": "#3B5998", "color": "white"})
+    })
+  </script>
+</body>
+
