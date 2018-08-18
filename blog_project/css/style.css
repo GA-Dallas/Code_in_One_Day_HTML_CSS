@@ -1,0 +1,48 @@
+header {
+  text-align: center;
+  background: url('https://i.imgur.com/YNcaZze.jpg?2');
+  background-size: cover;
+  color: white;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  font-size: 70px;
+  padding: 20px;
+  background-color: black;
+  text-shadow: 2px 2px red;
+}
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid black;
+  border-radius: 20px;
+}
+ul {
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+li {
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+article {
+  max-width: 500px;
+  padding: 20px;
+  margin: 0 auto;
+}
+button{
+  padding: 5px;
+  border-radius: 10%;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+    padding: 5px;
+  }
+  li {
+    padding: 5px;
+    display: block;
+  }
+}
