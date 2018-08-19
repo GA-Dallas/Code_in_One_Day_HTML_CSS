@@ -1,0 +1,12 @@
+h1 {
+    color: orange;
+}
+
+img {
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#center-text {
+    text-align: center;
+}
