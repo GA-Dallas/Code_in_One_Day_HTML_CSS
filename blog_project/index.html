@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
@@ -8,13 +9,15 @@
     <img src="./imgs/profile_pic.png">
     <h1>Daniel's Coding Blog</h1>
     <ul>
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Contact Me</a></li>
-      <li><a href="#">My Favorite Places</a></li>
+      <li><a href="./about.html">About Me</a></li>
+      <li><a href="#footer-links">Contact Me</a></li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/">My Favorite Resources</a>
+      </li>
     </ul>
   </header>
   <article>
-    <h2>Lorem ipsum dolor sit amet</h2>
+    <h2><b>Lorem ipsum dolor sit amet</b></h2>
     <p>
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
     eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
@@ -25,10 +28,10 @@
     consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
     illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     </p>
-    <button>Like &#128077;</button>
+    <button>Like</button>
   </article>
   <article>
-    <h2>Lorem ipsum dolor sit amet</h2>
+    <h2><b>Lorem ipsum dolor sit amet</b></h2>
     <p>
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
     eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
@@ -39,10 +42,10 @@
     consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
     illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     </p>
-    <button>Like &#128077;</button>
+    <button>Like</button>
   </article>
   <article>
-    <h2>Lorem ipsum dolor sit amet</h2>
+    <h2><b>Lorem ipsum dolor sit amet</b></h2>
     <p>
     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
     eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
@@ -53,16 +56,32 @@
     consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
     illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     </p>
-    <button>Like &#128077;</button>
+    <button>Like</button>
   </article>
+  <footer>
+    <ul id='footer-links'>
+      <li>
+        <a href="mailto:daniel@danieljs.io">Email Me</a>
+      </li>
+      <li>
+        <a href="">LinkedIN</a>
+      </li>
+      <li>
+        <a href="">Twitter</a>
+      </li>
+    </ul>
+<p>Copyright <span id="date"></span></p>
+  </footer>
 
   <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous">
   </script>
-  <script>
 
+  <script>
+    let date = new Date()
+    document.getElementById('date').innerHTML = date.getUTCFullYear()
     // This is the jQuery Way
     // $("button").click(function(){
     //   $(this)
@@ -75,8 +94,13 @@
     var button = document.querySelectorAll('button')
     button.forEach((b) => {
       b.addEventListener('click', function(){
-      this.innerHTML ="liked &#128077;"
-      this.setAttribute('style', 'background-color: #3B5998; color: white;')
+      if(this.innerHTML === "Like"){
+          this.innerHTML = "Liked &#128077;"
+          this.setAttribute('style', 'background-color: #3B5998; color: white;')
+      } else {
+          this.innerHTML = "Like"
+          this.setAttribute('style', 'background-color: white; color: black;')
+      }
       })
     })
     }
