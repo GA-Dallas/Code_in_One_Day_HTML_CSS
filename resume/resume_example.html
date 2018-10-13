@@ -8,37 +8,62 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- This element tell the browser the name of our website -->
         <title>Daniels Scott's Resume</title>
+
+        <!-- This element links a external CSS file -->
         <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
+        <!-- This is a generic header element to let us know what kind of content goes here -->
         <header>
-                <img src="./blog_project/profile_pic.jpg" alt="Daniel's Profile Picture"/>
+                <!-- image element -->
+                <img src="./imgs/profile_pic.png" alt="Daniel's Profile Picture"/>
+                
+                <!-- Heading elements -->
                 <h1>Daniel Scott</h1>
                 <h2>Contact Information</h2>
+                <div class="wrapper">
                 <ul>
-                    <li><b>Phone Number:</b> <small>817-880-9025</small></li>
-                    <li><b>Email: </b><small> <a href="mailto:daniel.scott@generalassemb.ly">daniel.scott@generalassemb.ly</a></small></li>
-                    <li><b>Address:</b> <small>123 Main Street - Dallas Texas</small></li>
+                    <li>
+                        <!-- This is a bold tag -->
+                        <b>Phone Number:</b> 
+                        <small>817-555-5555</small>
+                    </li>
+                    <li>
+                        <b>Email:</b>
+                        <!-- The 'small' tag decreases text size relative to it's parent element -->
+                            <small>
+                                <a href="mailto:daniel.scott@generalassemb.ly">daniel.scott@generalassemb.ly</a>
+                            </small>
+                        </li>
+                    <li>
+                        <b>Address:</b> 
+                        <small>123 Main Street - Dallas Texas</small>
+                    </li>
                 </ul>
+                </div>
                 <h2>Bio</h2>
                 <p>I am a self motivated <br />Web Developer who loves to teach people
                     how to code!
                 </p>
         </header>
+        <!-- This is a horizontal rule tag - it creates a line on the page -->
         <hr />
+        <!-- This is a generic section element to let us know what kind of content goes here -->
         <section>
                 <h2>Work Experience</h2>
-            <div>
+            
                 <h4><small>Lead Instructor - </small>General Assembly - 2016 - Present</h4>
+            <div class="wrapper">
                 <ul>
                     <li>Develop curriculmn</li>
                     <li>Instructed Students</li>
                     <li>Provide feedback on projects</li>
                 </ul>
             </div>
-            <div id="center-text">
                 <h4><small>Lead Developer - </small>MDJ Studios - 2014 - Present</h4>
+            <div class="wrapper">
                 <ul>
                     <li>Build websites / web application</li>
                     <li>Build tutorial content</li>
@@ -47,10 +72,5 @@
     
             </div>
         </section>
-
-
-
-
-
     </body>
 </html>

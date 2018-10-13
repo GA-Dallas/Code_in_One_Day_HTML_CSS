@@ -1,12 +1,12 @@
-h1 {
-    color: orange;
+body {
+    text-align: center
 }
 
-img {
-    border: 3px solid black;
-    border-radius: 50%;
+.wrapper {
+    margin: 0 auto;
+    width: 300px;
 }
 
-#center-text {
-    text-align: center;
+.wrapper li {
+    text-align: left;
 }
