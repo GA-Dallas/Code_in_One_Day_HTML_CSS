@@ -1,0 +1,5 @@
+Hello there, you can place images in this folder for your resume.
+
+The file path to reference them would go like this..
+
+<img src="./imgs/your-image-name.jpg" alt="some description" />
