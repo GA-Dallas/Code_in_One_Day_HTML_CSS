@@ -70,7 +70,7 @@
         <a href="">Twitter</a>
       </li>
     </ul>
-<p>Copyright <span id="date"></span></p>
+  <p>Copyright <span id="date"></span></p>
   </footer>
 
   <script
@@ -91,8 +91,8 @@
 
     // Vanilla JavaScript Way
     window.onload = function(){
-    var button = document.querySelectorAll('button')
-    button.forEach((b) => {
+      var button = document.querySelectorAll('button')
+      button.forEach((b) => {
       b.addEventListener('click', function(){
       if(this.innerHTML === "Like"){
           this.innerHTML = "Liked &#128077;"
@@ -100,11 +100,10 @@
       } else {
           this.innerHTML = "Like"
           this.setAttribute('style', 'background-color: white; color: black;')
-      }
+         }
+        })
       })
-    })
     }
   </script>
-  
 </body>
 
