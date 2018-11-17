@@ -7,21 +7,16 @@ header {
   background-size: cover;
   color: white;
 }
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
+img {
+  margin-top: 40px;
+  border: 7px solid black;
+  border-radius: 50%;
 }
 h1 {
   font-size: 70px;
   padding: 20px;
   background-color: black;
   text-shadow: 2px 2px greenyellow;
-}
-img {
-  margin-top: 40px;
-  border: 7px solid black;
-  border-radius: 50%;
 }
 ul {
   padding: 10px;
@@ -30,6 +25,11 @@ ul {
 li {
   display: inline;
   padding-right: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
 }
 article {
   max-width: 800px;
@@ -55,10 +55,6 @@ footer {
 
 #footer-links a {
   color: black;
-}
-button{
-  padding: 5px;
-  border-radius: 10%;
 }
 @media (max-width: 500px) {
   h1 {
